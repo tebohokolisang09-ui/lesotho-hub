@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Business - Lesotho Farming Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: whitesmoke;
+      color: darkslategray;
+    }
+
+    /* Header */
+    header {
+      background: forestgreen;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+    }
+
+    header .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Search bar */
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px auto 20px;
+      max-width: 700px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid gainsboro;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .search-bar button {
+      padding: 12px 20px;
+      border: none;
+      background: forestgreen;
+      color: white;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .search-bar button:hover {
+      background: darkgreen;
+    }
+
+    /* Categories */
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .categories button {
+      background: gainsboro;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background 0.3s;
+    }
+
+    .categories button:hover {
+      background: forestgreen;
+      color: white;
+    }
+
+    /* Product grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px 60px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      background: #f5f5f5;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      font-size: 18px;
+      color: forestgreen;
+      margin-bottom: 8px;
+    }
+
+    .product-info p {
+      font-size: 16px;
+      color: dimgray;
+      margin-bottom: 5px;
+    }
+
+    .product-info span {
+      font-weight: bold;
+      color: black;
+    }
+
+    /* Footer */
+    footer {
+      background: forestgreen;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Lesotho Farming Hub</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="business.html">Business</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="tips.html">Tips</a>
+    </nav>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search products...">
+    <button>Search</button>
+  </div>
+
+  <!-- Categories -->
+  <div class="categories">
+    <button>Crops</button>
+    <button>Livestock</button>
+    <button>Poultry</button>
+    <button>Dairy</button>
+    <button>Vegetables</button>
+    <button>Fruits</button>
+    <button>Tools</button>
+  </div>
+
+  <!-- Product Grid -->
+  <section class="products">
+    <div class="product">
+      <img src="RO.jpeg" alt="Maize">
+      <div class="product-info">
+        <h3>Fresh Maize</h3>
+        <p><span>M50</span>/bag</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="TO.webp" alt="Eggs">
+      <div class="product-info">
+        <h3>Free-range Eggs</h3>
+        <p><span>M30</span>/tray</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="stebo.jpeg" alt="Goat">
+      <div class="product-info">
+        <h3>Goat Herd</h3>
+        <p><span>M120</span>/kg</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="koli.webp" alt="Milk">
+      <div class="product-info">
+        <h3>Fresh Milk</h3>
+        <p><span>M18</span>/litre</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="ko.jpeg" alt="Tomatoes">
+      <div class="product-info">
+        <h3>Tomatoes</h3>
+        <p><span>M15</span>/basket</p>
+      </div>
+    </div>
+    
+    <!-- New Products -->
+    <div class="product">
+      <img src="boss.webp" alt="Wheat">
+      <div class="product-info">
+        <h3>Organic Wheat</h3>
+        <p><span>M65</span>/sack</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="loss.webp" alt="Honey">
+      <div class="product-info">
+        <h3>Pure Honey</h3>
+        <p><span>M85</span>/jar</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="toss.webp" alt="Chicken">
+      <div class="product-info">
+        <h3>Live Chickens</h3>
+        <p><span>M55</span>/each</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="koss.webp" alt="Potatoes">
+      <div class="product-info">
+        <h3>Fresh Potatoes</h3>
+        <p><span>M35</span>/bag</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="boy.jpeg" alt="Cheese">
+      <div class="product-info">
+        <h3>Farm Cheese</h3>
+        <p><span>M45</span>/block</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="car.jpeg" alt="Carrots">
+      <div class="product-info">
+        <h3>Organic Carrots</h3>
+        <p><span>M20</span>/bunch</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="wool.webp" alt="Sheep">
+      <div class="product-info">
+        <h3>Sheep Wool</h3>
+        <p><span>M75</span>/kg</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="ber.webp" alt="Berries">
+      <div class="product-info">
+        <h3>Fresh Berries</h3>
+        <p><span>M40</span>/box</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lesotho Farming Hub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

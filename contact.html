@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Lesotho Farming Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      background: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #2d572c;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #e6f2e6;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: #2d572c;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 80px;
+      background: #fff;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .contact-info h2, .contact-form h2 {
+      color: #2d572c;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form input, form textarea {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+    }
+
+    form textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    form button {
+      background: #2d572c;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    form button:hover {
+      background: #1e3d1e;
+    }
+
+    /* Footer */
+    footer {
+      background: #2d572c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Lesotho Farming Hub</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="business.html">Service</a>
+      <a href="contact.html">Contact</a>
+      <a href="tip.html">Tip</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you. Reach out for inquiries, partnerships, or support.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Our Contact Details</h2>
+      <p><strong>Address:</strong> Maseru, Lesotho</p>
+      <p><strong>Phone:</strong> +266 5000 0000</p>
+      <p><strong>Email:</strong> info@lesothofarminghub.com</p>
+      <p><strong>Working Hours:</strong> Mon - Fri, 8:00 AM - 5:00 PM</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lesotho Farming Hub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
